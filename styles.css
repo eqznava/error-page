@@ -1,0 +1,72 @@
+body{
+  margin: 0px;
+  font-family: helvetica;
+}
+.header{
+  background-color: #21C08b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  top: 0px;
+}
+.header__img{
+  margin-left: 30px;
+  width: 200px;
+}
+.error{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#21C08b, #AB88FF);
+  min-height: calc(100vh - 200px);
+  width: 100%;
+}
+.error h1{
+  animation-name: beat;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  height: 100px;
+  margin:0px;
+}
+
+@keyframes beat {
+  0%{
+    font-size: 3em;
+  }
+  50%{
+    font-size: 5em;
+  }
+  100%{
+    font-size: 3em;
+  }
+}
+.error p{
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0px;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #AB88FF;
+}
+.footer a {
+  font-size: 14px;
+  color: white;
+  padding-left: 30px;
+  text-decoration: none;
+}
+.footer a:hover{
+  text-decoration: underline;
+}
